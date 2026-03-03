@@ -1,2 +1,4 @@
-FROM nginx:alpine
-COPY index.html /usr/share/nginx/html/
+FROM python:3.10
+WORKDIR /app
+COPY app.py .
+CMD ["python", "app.py"]
